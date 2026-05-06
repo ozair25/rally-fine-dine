@@ -1,0 +1,102 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Represents a user of the application.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "role": { "type": "string", "enum": ["customer", "admin"] }
+      },
+      "required": ["name", "email", "role"]
+    },
+    "MenuItem": {
+      "title": "Menu Item",
+      "description": "An item on the restaurant's menu.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "price": { "type": "number" },
+        "description": { "type": "string" },
+        "image": { "type": "string" }
+      },
+      "required": ["name", "category", "price", "description", "image"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "A food order placed by a user.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userPhone": { "type": "string" },
+        "items": { "type": "array" },
+        "totalPrice": { "type": "number" },
+        "status": { "type": "string", "enum": ["pending", "accepted", "preparing", "delivered", "cancelled"] },
+        "deliveryType": { "type": "string", "enum": ["delivery", "pickup"] },
+        "address": { "type": "string" },
+        "pinCode": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "items", "totalPrice", "status", "deliveryType", "createdAt"]
+    },
+    "DeliveryZone": {
+      "title": "Delivery Zone",
+      "description": "Configuration for a delivery area.",
+      "type": "object",
+      "properties": {
+        "zoneName": { "type": "string" },
+        "pinCodes": { "type": "array" },
+        "deliveryFee": { "type": "number" },
+        "minOrder": { "type": "number" }
+      },
+      "required": ["zoneName", "pinCodes", "deliveryFee", "minOrder"]
+    },
+    "Review": {
+      "title": "Review",
+      "description": "Customer feedback and ratings.",
+      "type": "object",
+      "properties": {
+        "userName": { "type": "string" },
+        "rating": { "type": "number" },
+        "comment": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userName", "rating", "comment"]
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "User",
+      "description": "User profiles and roles."
+    },
+    "menu_items": {
+      "schema": "MenuItem",
+      "description": "Global menu items."
+    },
+    "orders": {
+      "schema": "Order",
+      "description": "Order history."
+    },
+    "delivery_zones": {
+      "schema": "DeliveryZone",
+      "description": "Delivery availability and fees."
+    },
+    "reviews": {
+      "schema": "Review",
+      "description": "Public customer reviews."
+    },
+    "admins": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "email": { "type": "string" }
+        }
+      },
+      "description": "Strict list of admin UIDs."
+    }
+  }
+}
