@@ -1,0 +1,96 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helpers ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // --- Entity Validations ---
+
+    function isValidUser(data) {
+      return data.keys().hasAll(['name', 'email', 'role']) &&
+             data.keys().size() == 3 &&
+             data.name is string && data.name.size() > 0 && data.name.size() < 100 &&
+             data.email is string && data.email.size() > 5 &&
+             data.role in ['customer', 'admin'];
+    }
+
+    function isValidMenuItem(data) {
+      return data.keys().hasAll(['name', 'category', 'price', 'description', 'image']) &&
+             data.keys().size() == 5 &&
+             data.name is string && data.name.size() > 0 &&
+             data.category is string &&
+             data.price is number && data.price >= 0 &&
+             data.description is string &&
+             data.image is string;
+    }
+
+    function isValidOrder(data) {
+      return data.keys().hasAll(['userId', 'items', 'totalPrice', 'status', 'deliveryType', 'createdAt']) &&
+             data.userId == request.auth.uid &&
+             data.items is list && data.items.size() > 0 &&
+             data.totalPrice is number && data.totalPrice >= 0 &&
+             data.status in ['pending', 'accepted', 'preparing', 'delivered', 'cancelled'] &&
+             data.deliveryType in ['delivery', 'pickup'] &&
+             data.createdAt == request.time;
+    }
+
+    // --- Collections ---
+
+    match /users/{userId} {
+      allow get: if isValidId(userId) && (isOwner(userId) || isAdmin());
+      allow list: if isAdmin();
+      allow create: if isOwner(userId) && isValidUser(incoming());
+      allow update: if isValidId(userId) && (isOwner(userId) || isAdmin()) && 
+                    (isAdmin() || (incoming().name is string && incoming().diff(existing()).affectedKeys().hasOnly(['name', 'phone'])));
+    }
+
+    match /menu_items/{itemId} {
+      allow read: if isValidId(itemId);
+      allow write: if isValidId(itemId) && isAdmin() && isValidMenuItem(incoming());
+    }
+
+    match /orders/{orderId} {
+      allow get: if isValidId(orderId) && isSignedIn() && (isOwner(existing().userId) || isAdmin());
+      allow list: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+      allow create: if isValidId(orderId) && isSignedIn() && isValidOrder(incoming());
+      allow update: if isValidId(orderId) && isAdmin() && (isValidOrder(incoming()) && (incoming().status is string && incoming().diff(existing()).affectedKeys().hasOnly(['status', 'updatedAt'])));
+    }
+
+    match /delivery_zones/{zoneId} {
+      allow read: if isValidId(zoneId);
+      allow write: if isValidId(zoneId) && isAdmin();
+    }
+
+    match /admins/{adminId} {
+      allow read: if isSignedIn();
+      allow write: if false; // Only manageable via console for safety or a super-admin flow
+    }
+  }
+}
