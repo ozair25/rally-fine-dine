@@ -27,7 +27,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 14.50,
     category: 'Biryani Rice Dishes',
-    image: '/src/assets/images/regenerated_image_1778058056003.jpg'
+    image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'br3',
@@ -62,7 +62,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 14.50,
     category: 'Indian Specialities',
-    image: '/src/assets/images/regenerated_image_1778058057994.jpg'
+    image: 'https://images.unsplash.com/photo-1631292784640-2b24be784d5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpY2tlbiUyMGN1cnJ5fGVufDB8fDB8fHww'
   },
   {
     id: 'in3',
@@ -95,7 +95,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 12.50,
     category: 'Indian Specialities',
-    image: '/src/assets/images/regenerated_image_1778058059692.jpg'
+    image: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnZXRhYmxlJTIwY3Vycnl8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 'in6',
@@ -117,7 +117,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 18.90,
     category: 'Indian Specialities',
-    image: '/src/assets/images/regenerated_image_1778058061292.jpg'
+    image: 'https://images.unsplash.com/photo-1545247181-516773cae754?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFtYiUyMGN1cnJ5fGVufDB8fDB8fHww'
   },
 
   // 🍔 Burger Menu
@@ -174,7 +174,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 9.50,
     category: 'Burger Menu',
-    image: '/src/assets/images/regenerated_image_1778058062715.jpg'
+    image: 'https://images.unsplash.com/photo-1624233245934-1ee385a190c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y3Jpc3B5JTIwYnVyZ2VyfGVufDB8fDB8fHww'
   },
 
   // 🍕 Pizza
@@ -209,7 +209,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 10.90,
     category: 'Pizza',
-    image: '/src/assets/images/regenerated_image_1778058064119.jpg'
+    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emF8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 'p4',
@@ -474,7 +474,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 11.90,
     category: 'Burger Deals',
-    image: '/src/assets/images/regenerated_image_1778058065282.jpg'
+    image: 'https://images.unsplash.com/photo-1678007698645-fce0641d84e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1cmdlciUyMHBsdXMlMjBmcmllc3xlbnwwfHwwfHx8MA%3D%3D'
   },
   {
     id: 'bd2',
@@ -531,7 +531,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 10.50,
     category: 'Indian Vegan Dishes',
-    image: '/src/assets/images/regenerated_image_1778058066634.jpg'
+    image: 'https://images.unsplash.com/photo-1755090154817-58d9d36ec988?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRhbCUyMGN1cnJ5fGVufDB8fDB8fHww'
   },
 
   // 🍗 Chicken Dishes
@@ -590,7 +590,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 13.50,
     category: 'Vegetarian Dishes',
-    image: '/src/assets/images/regenerated_image_1778058068078.jpg'
+    image: 'https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFsYWslMjBwYW5lZXJ8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 'vd3',
@@ -601,7 +601,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 11.90,
     category: 'Vegetarian Dishes',
-    image: '/src/assets/images/regenerated_image_1778058069614.jpg'
+    image: 'https://images.unsplash.com/photo-1755090154755-006e02ea26b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHZlZyUyMGN1cnJ5fGVufDB8fDB8fHww'
   },
 
   // ✨ Special
@@ -638,7 +638,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 4.90,
     category: 'Desserts',
-    image: '/src/assets/images/regenerated_image_1778058071053.jpg'
+    image: 'https://images.unsplash.com/photo-1593701461250-d7b22dfd3a77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3VsYWIlMjBqYW11bnxlbnwwfHwwfHx8MA%3D%3D'
   },
   {
     id: 'ds3',
@@ -695,7 +695,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 3.50,
     category: 'Drinks',
-    image: '/src/assets/images/regenerated_image_1778058072754.jpg'
+    image: 'https://images.unsplash.com/photo-1680404005217-a441afdefe83?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaXRlfGVufDB8fDB8fHww'
   },
   {
     id: 'd4',
@@ -717,7 +717,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 2.50,
     category: 'Drinks',
-    image: '/src/assets/images/regenerated_image_1778058074289.jpg'
+    image: 'https://images.unsplash.com/photo-1561041695-d2fadf9f318c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2F0ZXIlMjBib3R0bGV8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 'd6',
@@ -728,7 +728,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 4.90,
     category: 'Drinks',
-    image: '/src/assets/images/regenerated_image_1778058075765.jpg'
+    image: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuZ28lMjBsYXNzaXxlbnwwfHwwfHx8MA%3D%3D'
   }
 ];
 
