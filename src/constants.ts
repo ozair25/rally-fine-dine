@@ -27,7 +27,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 14.50,
     category: 'Biryani Rice Dishes',
-    image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHZlZyUyMHZiaXJ5YW5pfGVufDB8fDB8fHww'
   },
   {
     id: 'br3',
@@ -106,7 +106,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 15.50,
     category: 'Indian Specialities',
-    image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=800'
+    image: 'https://images.unsplash.com/photo-1642192429402-90e329af29a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpY2tlbiUyMHBvdGF0b3xlbnwwfHwwfHx8MA%3D%3D'
   },
   {
     id: 'in7',
@@ -266,7 +266,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 10.50,
     category: 'Vegetarian Pizza',
-    image: 'https://images.unsplash.com/photo-1605411681720-3136209e9927?w=800'
+    image: 'https://images.unsplash.com/photo-1773620497603-bdad024a5ad4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29ybiUyMGFuZCUyMGNoZWVzZSUyMHBpenphfGVufDB8fDB8fHww'
   },
   {
     id: 'vp3',
@@ -336,7 +336,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 9.50,
     category: 'Pasta & Casseroles',
-    image: 'https://images.unsplash.com/photo-1645112481357-190f845d4f3b?w=800'
+    image: 'https://images.unsplash.com/photo-1570549986390-6bd150ac3515?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2hpdGUlMjBzYXVjZSUyMHBhc3RhfGVufDB8fDB8fHww'
   },
   {
     id: 'pc2',
@@ -382,7 +382,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 4.50,
     category: 'Sides',
-    image: 'https://images.unsplash.com/photo-1606850246452-32115f532a87?w=800'
+    image: 'https://images.unsplash.com/photo-1573140401552-3fab0b24306f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FybGljJTIwYnJlYWR8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 's2',
@@ -393,7 +393,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 5.50,
     category: 'Sides',
-    image: 'https://images.unsplash.com/photo-1502462041640-b3d7e504066a?w=800'
+    image: 'https://images.unsplash.com/photo-1619531040576-f9416740661b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hlZXNlJTIwZ2FybGljJTIwYnJlYWR8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 's3',
@@ -415,7 +415,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 4.50,
     category: 'Sides',
-    image: 'https://images.unsplash.com/photo-1630384066252-19e1ad95ef3d?w=800'
+    image: 'https://images.unsplash.com/photo-1714651620426-1ae32ca6b418?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyaSUyMHBlcmklMjBmcmllc3xlbnwwfHwwfHx8MA%3D%3D'
   },
 
   // 🥗 Salads
@@ -520,7 +520,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 10.90,
     category: 'Indian Vegan Dishes',
-    image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800'
+    image: 'https://images.unsplash.com/photo-1736239093375-34f0a2f33c7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWFsbyUyMGdvYmhpJTIwY3Vycnl8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 'iv3',
