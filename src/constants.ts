@@ -16,7 +16,7 @@ export const MENU_ITEMS: MenuItem[] = [
     },
     price: 16.90,
     category: 'Biryani Rice Dishes',
-    image: '/src/assets/images/regenerated_image_1778058054125.jpg'
+    image: 'https://images.unsplash.com/photo-1544378730-5e409d0e649e?q=80&w=956&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     id: 'br2',
